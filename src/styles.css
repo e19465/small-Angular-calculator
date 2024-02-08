@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main root styles */
+#root {
+    background-color: teal;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Classes inside app.component.html */
+.calculator-main-div{
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 5px -4px #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.calculator-title{
+    /* background-color: blue; */
+    width: 100%;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: darkblue;
+    font-size: 25px;
+}
+
+.calculator-screen{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #222, #555);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.calculator-function{
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.calculator-numbers-screen{
+    width: 100%;
+    height: 50px;
+    padding:10px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: auto;
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.caculator-upper-btns-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.clear-btn,
+.percentage-btn,
+.devide-btn,
+.small-btn,
+.large-btn{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #b22222,#d17a7a);
+    color: yellow;
+    font-size: 18px;
+    border: 1px solid #222;
+    outline: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-image: linear-gradient(to top, #8e1b1b,#d17a7a)
+    }
+}
+
+.clear-btn{
+    width: 50%;
+}
+
+.percentage-btn{
+    width: 25%;
+}
+.devide-btn{
+    width: 25%;
+}
+
+.other-btns{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.small-btn{
+    width: 25%;
+}
+
+.large-btn{
+    width: 50%;
+}
+

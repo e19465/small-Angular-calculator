@@ -1,0 +1,46 @@
+<div class="calculator-main-div">
+  <h1 class="calculator-title">Angular Calculator</h1>
+  <div class="calculator-screen">
+    <div class="calculator-function">{{ funcT }}</div>
+    <input
+      type="text"
+      class="calculator-numbers-screen"
+      placeholder="0"
+      maxlength="8"
+      value="{{ calcValue }}"
+      readonly
+    />
+  </div>
+  <div class="caculator-upper-btns-container">
+    <button class="clear-btn" (click)="onClickValue('c', 'function')">C</button>
+    <button class="percentage-btn" (click)="onClickValue('%', 'function')">
+      %
+    </button>
+    <button class="devide-btn" (click)="onClickValue('/', 'function')">
+      /
+    </button>
+  </div>
+  <div class="other-btns">
+    <button class="small-btn" (click)="onClickValue('7', 'number')">7</button>
+    <button class="small-btn" (click)="onClickValue('8', 'number')">8</button>
+    <button class="small-btn" (click)="onClickValue('9', 'number')">9</button>
+    <button class="small-btn" (click)="onClickValue('*', 'function')">*</button>
+  </div>
+  <div class="other-btns">
+    <button class="small-btn" (click)="onClickValue('4', 'number')">4</button>
+    <button class="small-btn" (click)="onClickValue('5', 'number')">5</button>
+    <button class="small-btn" (click)="onClickValue('6', 'number')">6</button>
+    <button class="small-btn" (click)="onClickValue('+', 'function')">+</button>
+  </div>
+  <div class="other-btns">
+    <button class="small-btn" (click)="onClickValue('1', 'number')">1</button>
+    <button class="small-btn" (click)="onClickValue('2', 'number')">2</button>
+    <button class="small-btn" (click)="onClickValue('3', 'number')">3</button>
+    <button class="small-btn" (click)="onClickValue('-', 'function')">-</button>
+  </div>
+  <div class="other-btns">
+    <button class="small-btn" (click)="onClickValue('.', 'function')">.</button>
+    <button class="small-btn" (click)="onClickValue('0', 'number')">0</button>
+    <button class="large-btn" (click)="onClickValue('=', 'function')">=</button>
+  </div>
+</div>
